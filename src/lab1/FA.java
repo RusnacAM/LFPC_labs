@@ -30,7 +30,7 @@ public class FA {
             e.printStackTrace();
         }
 
-        //System.out.println(prodr);
+        System.out.println(prodr);
 
         //Function to get only nonterminal symbols
         getNonterminal(prodr);
@@ -77,9 +77,9 @@ public class FA {
             }
         }
 
-        //System.out.println(col1);
+        System.out.println(col1);
         //System.out.println(col2);
-        //System.out.println(vn);
+        System.out.println(vn);
 
     }
 
@@ -88,6 +88,14 @@ public class FA {
         ArrayList<Integer> colPos = new ArrayList<>();
         ArrayList<Integer> rowPos = new ArrayList<>();
 
+        for(int i = 0; i < col1.size(); i++){
+            for(int j = 0; j < vn.size(); j++){
+                if(col1.get(i) == vn.get(j)){
+                    rowPos.add(vn.indexOf(vn.get(j)));
+                }
+            }
+        }
+
         for(int i = 0; i < col2.size(); i++){
             for(int j = 0; j < vn.size(); j++){
                 if(col2.get(i) == vn.get(j)){
@@ -95,14 +103,6 @@ public class FA {
                 } else if (Character.isLowerCase(col2.get(i))){
                     colPos.add(vn.size());
                     break;
-                }
-            }
-        }
-
-        for(int i = 0; i < col1.size(); i++){
-            for(int j = 0; j < vn.size(); j++){
-                if(col1.get(i) == vn.get(j)){
-                    rowPos.add(vn.indexOf(vn.get(j)));
                 }
             }
         }
