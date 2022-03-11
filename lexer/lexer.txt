@@ -1,0 +1,16 @@
+Function main()
+var arr[] = [5.7, 30, 45, 43.7, 12];
+var n = 5;
+largestNum(arr, n);
+return 0;
+EndFunction
+
+Function largestNum(var array[], var size)
+var max = array[0];
+   For(var i = 1; i < size; i++)
+      If(array[i] > max)
+         max = array[i];
+      EndIf
+   Next
+EndFunction
+
