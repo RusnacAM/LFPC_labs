@@ -1,0 +1,11 @@
+S -> dB
+S -> AC
+A -> d
+A -> dS
+A -> aBdB
+B -> a
+B -> aA
+B -> AC
+D -> ab
+C -> bC
+C -> $
