@@ -1,0 +1,6 @@
+S -> LdF
+F -> E
+L -> ca
+L -> La
+E -> b
+E -> Eeb
